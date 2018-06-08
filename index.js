@@ -33,11 +33,11 @@ function calcLineWidth(t,s) {
     var resultLineWidth;
     console.log(v);
     if(v <= 0.1){
-        resultLineWidth =25;
+        resultLineWidth =20;
     }else if(v >=3){
         resultLineWidth = 5;
     }else{
-        resultLineWidth = 25-(v-0.1)/(3-0.1)*(25-5);
+        resultLineWidth = 20-(v-0.1)/(3-0.1)*(20-5);
     }
     if(lastLineWidth == -1){
         return resultLineWidth;
